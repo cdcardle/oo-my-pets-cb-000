@@ -57,4 +57,8 @@ class Owner
       end
     end
   end
+
+  def list_pets
+    self.pets.values.each {|array| array.each {|pet| puts pet}}
+  end
 end
