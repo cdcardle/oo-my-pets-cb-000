@@ -22,18 +22,23 @@ class Owner
   end
 
   def say_species
-    "I am a #{species}."
+    if species.match([/\A[aeiou]/]) ? "I am a #{species}."
+    end
   end
 
   def buy_fish(fish)
-    @pets[:fishes] << Fish.new(fish)
+    self.pets[:fishes] << Fish.new(fish)
   end
 
   def buy_cat(cat)
-    @pets[:cats] << Cat.new(cat)
+    self.pets[:cats] << Cat.new(cat)
   end
 
   def buy_dog(dog)
-    @pets[:dogs] << Dog.new(dog)
+    self.pets[:dogs] << Dog.new(dog)
+  end
+
+  def walk_dogs
+    self.dogs
   end
 end
