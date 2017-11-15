@@ -22,7 +22,7 @@ class Owner
   end
 
   def say_species
-    if species.match([/\A[aeiou]/]) ? "I am a #{species}." : "I am an #{species}."
+    if species.match(/\A[^aeiou]/) ? "I am a #{species}." : "I am an #{species}."
     end
   end
 
