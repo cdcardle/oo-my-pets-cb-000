@@ -7,4 +7,8 @@ class Owner
     @species = species
     @pets = {fishes: [], cats: [], dogs: []}
   end
+
+  def buy_fish(fish)
+    @fish = fish
+  end
 end
