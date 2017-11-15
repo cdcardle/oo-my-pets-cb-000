@@ -63,5 +63,3 @@ class Owner
     return "I have #{array[0].count} fish, #{array[2].count} dog(s), and #{array[1].count} cat(s)."
   end
 end
-
-pets = {fishes: ["one", "two"], cats: ["three"], dogs: ["fido", "rover", "spot"]}
