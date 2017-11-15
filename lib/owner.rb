@@ -59,7 +59,9 @@ class Owner
   end
 
   def list_pets
-    arrays = self.pets.values
-    puts "I have #{arrays[0].count} fish, #{arrays[2].count} dog(s), and #{arrays[1].count} cat(s)."
+    array = self.pets.values
+    return "I have #{array[0].count} fish, #{array[2].count} dog(s), and #{array[1].count} cat(s)."
   end
 end
+
+pets = {fishes: ["one", "two"], cats: ["three"], dogs: ["fido", "rover", "spot"]}
