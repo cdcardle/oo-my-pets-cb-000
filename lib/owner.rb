@@ -22,8 +22,7 @@ class Owner
   end
 
   def say_species
-    if species.scan(/\A[^aeiou]/) == [species] ? "I am a #{species}." : "I am an #{species}."
-    end
+    species.scan(/\A[^aeiou]/) == [species] ? "I am a #{species}." : "I am an #{species}."
   end
 
   def buy_fish(fish)
