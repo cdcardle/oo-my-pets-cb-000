@@ -13,19 +13,4 @@ class Owner
     self.all << self
   end
 
-  def reset_all
-    self.all.clear
-  end
-
-  def self.count
-    self.all.count
-  end
-
-  def say_species
-    "I am a #{@species}."
-  end
-
-  def buy_fish(fish)
-    @fish = fish
-  end
 end
