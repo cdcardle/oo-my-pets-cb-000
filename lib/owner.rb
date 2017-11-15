@@ -59,6 +59,7 @@ class Owner
   end
 
   def list_pets
-    self.pets.values.each {|array| array.each {|pet| puts pet}}
+    arrays = self.pets.values
+    puts "I have #{arrays[0].count} fish, #{arrays[2].count} dog(s), and #{arrays[1].count} cat(s)."
   end
 end
