@@ -26,6 +26,6 @@ class Owner
   end
 
   def buy_fish(fish)
-    @pets[:fishes] << fish
+    @pets[:fishes] << fish unless fish.class != Fish
   end
 end
