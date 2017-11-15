@@ -41,6 +41,3 @@ class Owner
     self.dogs
   end
 end
-
-turtle = Owner.new("turtle")
-elephant = Owner.new("elephant")
