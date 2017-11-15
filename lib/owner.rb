@@ -15,6 +15,5 @@ class Owner
 
   def reset_all
     self.all.reset
-    
   end
 end
