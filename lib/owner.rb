@@ -4,7 +4,7 @@ class Owner
   @@all = []
 
   def self.all
-    @@all.dup.freeze
+    @@all
   end
 
   def initialize(spieces)
